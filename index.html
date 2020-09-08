@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <title>FoodCamp</title>
+</head>
+<body>
+
+  <!--TOPO-->
+  <header class="topo">
+    <h1>FoodCamp</h1>
+    <p>Sua comida em 6 minutos</p>
+  </header>
+
+  <!--PRINCIPAL-->
+  <div class="principal">
+    
+    <!--COMIDA-->
+    <h2>Primeiro, seu prato</h2>    
+    <ul class="comida">
+      <li class="item" onclick="selecao('comida',1,16.90)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/hamburguer.jpg" alt="comida">
+        <h3>Hamburguer</h3>
+        <p class="descricao">Hamburguer, queijo, alface e tomate</p>
+        <p class="preco">R$ 16,90</p>
+      </li>
+      <li class="item" onclick="selecao('comida',2,25.50)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/pizza.jpg" alt="comida">
+        <h3>Pizza</h3>
+        <p class="descricao">Queijo, tomate e manjeiricão</p>
+        <p class="preco">R$ 25,50</p>
+      </li>
+      <li class="item" onclick="selecao('comida',3,5.00)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/coxinha.jpg" alt="comida">
+        <h3>Coxinha</h3>
+        <p class="descricao">Recheada com frango e catupiry</p>
+        <p class="preco">R$ 5,00</p>
+      </li>
+      <li class="item" onclick="selecao('comida',4,4.50)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/pastel.jpg" alt="comida">
+        <h3>Pastel</h3>
+        <p class="descricao">Carne, calabresa e queijo</p>
+        <p class="preco">R$ 4,50</p>
+      </li>      
+      <div class="espaco"></div>
+    </ul>
+
+    <!--BEBIDA-->
+    <h2>Agora, sua bebida</h2>
+    <ul class="bebida">
+      <li class="item" onclick="selecao('bebida',1,6.90)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/coca.jpg" alt="comida">
+        <h3>Coca-Cola</h3>
+        <p class="descricao">Lata 350ml</p>
+        <p class="preco">R$ 6,90</p>
+      </li>
+      <li class="item" onclick="selecao('bebida',2,4.00)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/agua.jpg" alt="comida">
+        <h3>Água</h3>
+        <p class="descricao">Garrafa 500ml</p>
+        <p class="preco">R$ 4,00</p>
+      </li>
+      <li class="item" onclick="selecao('bebida',3,6.50)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/guarana.jpg" alt="comida">
+        <h3>Guaraná</h3>
+        <p class="descricao">Lata 350ml</p>
+        <p class="preco">R$ 6,50</p>
+      </li>
+      <li class="item" onclick="selecao('bebida',4,7.90)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/suco.png" alt="comida">
+        <h3>Suco Dell Vale</h3>
+        <p class="descricao">Lata 350ml</p>
+        <p class="preco">R$ 7,90</p>
+      </li>
+      <div class="espaco"></div>
+    </ul>
+
+    <!--SOBREMESA-->
+    <h2>Por fim, sua sobremesa</h2>
+    <ul class="sobremesa">
+      <li class="item" onclick="selecao('sobremesa',1,6.50)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/bolo.jpg" alt="comida">
+        <h3>Bolo</h3>
+        <p class="descricao">Bolo de pote de brigadeiro</p>
+        <p class="preco">R$ 6,50</p>
+      </li>
+      <li class="item" onclick="selecao('sobremesa',2,5.50)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/donuts.jpg" alt="comida">
+        <h3>Donuts</h3>
+        <p class="descricao">Donuts recheado com doce de leite</p>
+        <p class="preco">R$ 5,50</p>
+      </li>
+      <li class="item" onclick="selecao('sobremesa',3,9.90)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/torta.jpg" alt="comida">
+        <h3>Torta de limão</h3>
+        <p class="descricao">Pedaço de torta 250g</p>
+        <p class="preco">R$ 9,90</p>
+      </li>
+      <li class="item" onclick="selecao('sobremesa',4,5.00)">
+        <ion-icon  class="icone" name="checkmark-circle"></ion-icon>
+        <img src="imagens/brigadeiro.jpg" alt="comida">
+        <h3>Brigadeiro</h3>
+        <p class="descricao">3 brigadeiros 50g</p>
+        <p class="preco">R$ 5,00</p>
+      </li>
+      <div class="espaco"></div>
+    </ul>
+  </div>
+
+  <!--FINALIZAR-->
+  <div class="finalizar">
+    <button disabled onclick="confirmar()">    
+      <p>Selecione os 3 itens<br>para fechar o pedido</p>
+    </button>       
+  </div>
+
+  <!--CONFIRMAÇÃO-->
+  <div class="confirmacao">
+    <p><strong>Confirme seu pedido:</strong></p>
+    <div class="valor-comida">
+      <p class="opcao">PRATO</p>
+      <p class="valor">VALOR</p>
+    </div>
+    <div class="valor-bebida">
+      <p class="opcao">PRATO</p>
+      <p class="valor">VALOR</p>
+    </div>
+    <div class="valor-sobremesa">
+      <p class="opcao">PRATO</p>
+      <p class="valor">VALOR</p>
+    </div>
+    <div class="valor-total">
+      <p class="opcao">TOTAL</p>
+      <p class="valor">VALOR</p>
+    </div>
+    <button onclick="finalizar()">Tudo certo, pode pedir!</button>
+    <button onclick="window.location=''">Cancelar</button>
+  </div>
+
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
